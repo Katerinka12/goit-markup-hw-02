@@ -1,9 +1,9 @@
 :root {
   --primary-text-color: #757575);
-  --secondary-text-color: rgba(33, 33, 33, 1);
-  --white-text-color: rgba(255, 255, 255, 1);
+  --secondary-text-color: #212121;;
+  --white-text-color: #FFFFFF;
   --primary-bgc: #e5e5e5;
-  --secondary-bgc: rgba(245, 244, 250, 1);
+  --secondary-bgc: #F5F4FA;
 }
 
 body {
@@ -13,4 +13,9 @@ line-height: 1,71;
 letter-spacing: 0.03em;
 
 color: var(--primary-text-color);
+background-color: var(--primary-bgc);
+}
+
+header {
+    background-color: #FFFFFF;
 }
