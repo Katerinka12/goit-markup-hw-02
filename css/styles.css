@@ -20,6 +20,7 @@ background-color: var(--primary-bgc);
 }
 
 /*Header*/
+
 .header {
     background-color: var(--primary-bgc);
 }
@@ -67,7 +68,10 @@ text-decoration: none;
     color:var(--secondary-text-color);
 }
 .header-list .link.contact:hover,
-.header-list .link.contact:focus {
+.header-list .link.contact:focus,
+.footer .adress-link:hover,
+.footer .adress-link:focus
+ {
     color: var(--secondary-text-color);
     
 }
@@ -85,7 +89,7 @@ text-decoration: none;
 }
 .hero .btn {
     font-family: 'Roboto', sans-serif;
-      font-weight: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1,88;
     display: flex;
@@ -154,9 +158,63 @@ color:var(--primary-text-color);}
     font-style: normal;
     color: var(--white-text-color);
 }
+.studio-title{
+    color: var(--white-text-color);
+}
 .adress-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
 
 /*Page Portfolio*/
+
+.exsamples-list,
+.exsamples-model {
+    list-style: none;
+}
+.button.current {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--white-text-color);
+    background-color: #2196F3;}
+    
+    .button {
+        font-family: 'Roboto',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1,62;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color:#212121
+        background-color: var(--secondary-bgc);
+    }
+
+.exsamples-model-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+    color: #212121;
+
+} 
+.exsamples-model-link {
+        text-decoration: none;
+    }
+.exsamles-model-type {
+    
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1,88;
+  
+    
+    color: #757575;}
+   
