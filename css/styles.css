@@ -204,7 +204,7 @@ color:var(--primary-text-color);
         text-align: center;
         letter-spacing: 0.03em;
 
-        color:#212121
+        color:#212121;
         background-color: var(--secondary-bgc);
     }
 
