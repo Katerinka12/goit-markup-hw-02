@@ -20,6 +20,12 @@ background-color: var(--primary-bgc);
 
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, p {margin: 0;}
+img{display: block;
+    
 }
 
 .section{
@@ -30,21 +36,24 @@ ul{
 /*Header*/
 
 .header {
-    display: flex;
-    align-items: baseline;
+    
     background-color: var(--primary-bgc);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .container{
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
 outline: 2px solid tomato;
 }
 
-.header.container{
+.header-container{
+    display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 .header-nav {
     display: flex;
@@ -68,7 +77,10 @@ outline: 2px solid tomato;
 
 
 .header-item .link {
-    margin-right: 50px;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 50px; 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -78,6 +90,8 @@ outline: 2px solid tomato;
     
     color: #212121;
 }
+
+
 .header-list{
     display: flex;
 }
@@ -90,6 +104,7 @@ outline: 2px solid tomato;
 .header-list .link.current {
 color:var(--secondary-text-color);
 }
+
 
 .link.contact {
 font-weight: 500;
@@ -116,11 +131,15 @@ text-decoration: none;
     color: var(--secondary-text-color);
     
 }
+
 /*Hero*/
 .hero {
     background: #2F303A;
 }
 .hero-title { 
+    /* display: inline-block;
+    width: 696px;
+    margin: 200px 452px 280px 452px; */
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 44px;
@@ -132,15 +151,21 @@ text-decoration: none;
     color: var(--white-text-color);
 }
 .hero .btn {
+    min-width: 200px;
+    min-height: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
     letter-spacing: 0.06em;
-    
+    border-radius: 4px;
     color: var(--white-text-color);
     background: var(--secondary-text-color);}
 
@@ -210,6 +235,8 @@ color:var(--primary-text-color);
 /*Footer*/
 
 .footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: #2F303A;
 }
 .adress {
