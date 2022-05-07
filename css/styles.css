@@ -43,7 +43,7 @@ img {
 /*Header*/
 
 .header {
-    height: 80px;
+  height: 80px;
   background-color: var(--primary-bgc);
   border-bottom: 1px solid #ececec;
 }
@@ -86,8 +86,8 @@ img {
 
 .header-item .link {
   display: block;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -107,7 +107,7 @@ img {
 .header-list {
   display: flex;
   margin-left: auto;
-max-height: 80px;
+  max-height: 80px;
 }
 .header-contact {
   margin-right: 50px;
@@ -233,6 +233,7 @@ h3 {
   color: #212121;
 }
 .works.section {
+  padding-top: 0;
   padding-bottom: 0;
 }
 .works-list {
@@ -253,7 +254,6 @@ h3 {
 /*Section Team*/
 
 .name-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -263,6 +263,11 @@ h3 {
   color: #212121;
 }
 
+.team-text {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 .team {
   background-color: var(--secondary-bgc);
 }
@@ -288,7 +293,7 @@ h3 {
   height: 252px;
 }
 .adress {
-  height: 81px;
+  max-height: 83px;
   line-height: 1.71;
   font-style: normal;
   color: var(--white-text-color);
@@ -300,9 +305,14 @@ h3 {
   color: var(--white-text-color);
 }
 .adress-link {
-  margin-top: 9px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.adress-item {
+  margin-top: 9px;
+}
+.adress-item:first-child {
+  margin-top: 0;
 }
 
 /*Page Portfolio*/
@@ -339,6 +349,10 @@ h3 {
 
   color: #212121;
   background-color: var(--secondary-bgc);
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
 .exsamples-btn {
   margin-right: 8px;
@@ -361,7 +375,14 @@ h3 {
 .exsamples-model-item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
+.exsamples-model-text {
+  text-align: center;
+  border: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .exsamples-model-title {
+  margin-bottom: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
