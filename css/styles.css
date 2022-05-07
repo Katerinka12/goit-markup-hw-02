@@ -25,6 +25,8 @@ ul{
 }
 h1, h2, h3, p {margin: 0;}
 img{display: block;
+    max-width: 100%;
+    height: auto;
     
 }
 
@@ -116,9 +118,9 @@ letter-spacing: 0.02em;
 text-decoration: none;
 }
 
-.link.contact:first-child{
-    margin-right: 50px;
-}
+/* .header-item .link:last-child{
+    margin-right: 0px;
+} */
 .header-list .link: hover, 
 .header-list .link:focus,
 {
@@ -187,12 +189,27 @@ text-decoration: none;
     align-items: flex-start;
     justify-content: space-between;
 }
+.adventages-item .advantages-text {
+    margin-right: 30px;
+    width: 270px;
+    height: 75px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.adventages-item .advantages-text:last-child {
+    margin-right: 0;
+
+}
 h3{
     margin-top: 0;
     margin-bottom: 10px;
 }
-p {margin-top: 0;
-margin-bottom: 0;}
+/* p {margin-top: 0;
+margin-bottom: 0;} */
 .advantages .title-advantage {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -204,7 +221,16 @@ margin-bottom: 0;}
     color: #212121;
     
 }
+.works.section {
+    padding-bottom: 0;
+
+}
+.works-list{
+    display: flex;
+    justify-content: space-between;
+}
 .works-title, .team-title {
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -216,6 +242,8 @@ margin-bottom: 0;}
 /*Section Team*/
 
 .name-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -227,6 +255,11 @@ color: #212121;
 .team{
     background-color: var(--secondary-bgc);
 }
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
 .post-team
 {font-family: 'Roboto', sans-serif;
 font-size: 16px;
@@ -241,17 +274,22 @@ color:var(--primary-text-color);
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: #2F303A;
+    height: 252px;
 }
 .adress {
-   
+    height: 81px;
     line-height: 1.71;
     font-style: normal;
     color: var(--white-text-color);
+}
+.header-title.under{
+    margin-bottom: 20px;
 }
 .studio-title{
     color: var(--white-text-color);
 }
 .adress-link {
+    margin-top: 9px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -262,6 +300,13 @@ color:var(--primary-text-color);
 .exsamples-model {
     list-style: none;
 } */
+.exsamples-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
 .button.current {
     font-family: 'Roboto';
     font-style: normal;
@@ -275,6 +320,7 @@ color:var(--primary-text-color);
     background-color: #2196F3;}
     
     .button {
+        margin-right: 8px;
         font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -282,11 +328,30 @@ color:var(--primary-text-color);
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
+        border-radius: 4px;
+        border-color: transparent;
 
         color:#212121;
         background-color: var(--secondary-bgc);
     }
+    /* .button:last-child{
+        margin-right: 0;
+    } */
+.exsamples-model{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.exsamples-model-item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.exsamples-model-item:nth-child(3n) {
+    margin-right: 0;
+}
+.exsamples-model-item:nth-child(n+7){
+    margin-bottom: 0px;
+}
 .exsamples-model-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -297,6 +362,7 @@ color:var(--primary-text-color);
     color: #212121;
 
 } 
+
 .exsamples-model-link {
         text-decoration: none;
     }
